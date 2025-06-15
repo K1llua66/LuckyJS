@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> document </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Search..."
+                        aria-label="Search">
+                </form>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header>
+        <div class="container_header">
+            <button class="menu_btn">
+                меню
+            </button>
+            <ul class="menu_list">
+                <li class="menu_item">
+                    Главная
+                </li>
+                <li class="menu_item">
+                    Скидки
+                </li>
+                <li class="menu_item">
+                    Отзывы
+                </li>
+                <li class="menu_item">
+                    Каталог
+                </li>
+
+                <li class="menu_item flexModel">
+                    <div class="themeDark" onclick="themeDark()"></div>
+                    <div class="themeLight" onclick="themeLight()"></div>
+                </li>
+
+            </ul>
+
+            <div class="time"> </div>
+
+        </div>
+    </header>
+
+
+    <main class="main">
+        <section class="product">
+            <h1 class="product_title">
+                Samsung S24 / Samsung S24 Ultra
+            </h1>
+            <img src="img/S24.jpg" alt="" class="product_img">
+            <p class="product_text">Продаю флагманский смартфон Samsung Galaxy S24 в идеальном состоянии. Устройство
+                оснащено потрясающим 6.2-дюймовым экраном Dynamic AMOLED 2X с невероятной яркостью 2600 нит, который
+                отлично работает даже на солнце. Мощный процессор Exynos 2400 в сочетании с 8 ГБ оперативной памяти
+                обеспечивает плавную работу любых приложений. Камера с AI-зумом и светочувствительной оптикой делает
+                великолепные фото в любых условиях. Аккумулятор держит до 28 часов видео или 72 часов музыки. Корпус из
+                армированного алюминия с защитой IP68 надёжен и устойчив к повреждениям. В комплекте: кабель Type-C,
+                скрепка для SIM.</p>
+            <button class="product_btn" id="mybtn" onclick="changetext()">Купить</button>
+
+        </section>
+        <section class="video">
+            <h1 class="video_title">видео</h1>
+            <video class="my_video" muted autoplay loop controls>
+                <source src="video/video1.mp4">
+            </video>
+            <div class="video_content">
+                <button class="video_btn play" onclick="playPause()">play</button>
+                <button class="video_btn muted" onclick="videoMute()">mute</button>
+                <button class="video_btn prev" onclick="prev()">prev</button>
+                <button class="video_btn next" onclick="next()">next</button>
+            </div>
+        </section>
+        <section class="cards">
+            <div class="card" style="width: 18rem;">
+                <img src="img/S24.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Samsung S24</h5>
+                    <p class="card-text">Самый крутой сигма про макс ультра гигачад смартфон для самых крутых йоу</p>
+                    <a href="#" class="btn btn-primary">Заказать</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/video.js"></script>
+</body>
+
+</html>
